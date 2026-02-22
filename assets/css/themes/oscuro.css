@@ -1,0 +1,150 @@
+/* ===== TEMA OSCURO (Modo Noche) ===== */
+/* Fondo azul profundo, cards oscuras, bordes luminosos */
+
+[data-theme="oscuro"] {
+    --bg-body: radial-gradient(circle at top, #1e3a8a 0%, #020617 60%);
+    --bg-surface: #0f172a;
+    --bg-surface-alt: #0c1426;
+    --text-body: #e2e8f0;
+    --text-muted: #94a3b8;
+    --text-light: #cbd5e1;
+    --border-color: rgba(148, 163, 184, 0.2);
+    --card-bg: rgba(15, 23, 42, 0.96);
+    --card-border: rgba(148, 163, 184, 0.15);
+    --header-bg: rgba(15, 23, 42, 0.98);
+    --header-text: #e2e8f0;
+    --footer-bg: #020617;
+    --footer-text: #94a3b8;
+}
+
+[data-theme="oscuro"] body,
+[data-theme="oscuro"] {
+    background: var(--bg-body);
+    background-attachment: fixed;
+    color: var(--text-body);
+}
+
+[data-theme="oscuro"] .header-surface {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="oscuro"] .section-alt {
+    background-color: var(--bg-surface-alt);
+}
+
+[data-theme="oscuro"] .section-white {
+    background-color: var(--bg-surface);
+}
+
+[data-theme="oscuro"] .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1.5rem;
+}
+
+[data-theme="oscuro"] .card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="oscuro"] .text-muted {
+    color: var(--text-muted);
+}
+
+[data-theme="oscuro"] .text-light {
+    color: var(--text-light);
+}
+
+/* Header / Nav */
+[data-theme="oscuro"] .nav-link {
+    color: var(--text-muted);
+}
+
+[data-theme="oscuro"] .nav-link:hover,
+[data-theme="oscuro"] .nav-link.active {
+    color: var(--primary-400);
+}
+
+/* Cards glass */
+[data-theme="oscuro"] .glass-card {
+    background: rgba(15, 23, 42, 0.96);
+    border-color: rgba(148, 163, 184, 0.2);
+}
+
+/* Footer */
+[data-theme="oscuro"] footer {
+    background-color: var(--footer-bg) !important;
+    color: var(--footer-text) !important;
+    border-top: 1px solid var(--border-color);
+}
+
+[data-theme="oscuro"] footer a {
+    color: var(--primary-400);
+}
+
+/* Form inputs */
+[data-theme="oscuro"] input,
+[data-theme="oscuro"] textarea,
+[data-theme="oscuro"] select {
+    background-color: var(--bg-surface) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-body) !important;
+}
+
+[data-theme="oscuro"] input::placeholder,
+[data-theme="oscuro"] textarea::placeholder {
+    color: var(--text-muted);
+}
+
+/* Accordion */
+[data-theme="oscuro"] .accordion-item {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="oscuro"] .accordion-item .accordion-trigger span {
+    color: var(--text-body);
+}
+
+/* Theme switcher */
+[data-theme="oscuro"] .theme-pill {
+    background: rgba(30, 41, 59, 0.8);
+}
+
+[data-theme="oscuro"] .theme-toggle-btn.inactive {
+    color: var(--text-muted);
+    border-color: rgba(148, 163, 184, 0.3);
+}
+
+/* Mobile nav */
+[data-theme="oscuro"] .mobile-nav {
+    background-color: var(--bg-surface);
+    border-color: var(--border-color);
+}
+
+/* Headings */
+[data-theme="oscuro"] h1,
+[data-theme="oscuro"] h2,
+[data-theme="oscuro"] h3,
+[data-theme="oscuro"] h4 {
+    color: var(--white);
+}
+
+/* Dark section override (stays dark) */
+[data-theme="oscuro"] .section-dark {
+    background-color: #020617;
+}
+
+/* Cookie banner */
+[data-theme="oscuro"] .cookie-banner .glass-card {
+    background: rgba(15, 23, 42, 0.98);
+}
+
+[data-theme="oscuro"] .cookie-banner h2 {
+    color: var(--text-body);
+}
+
+[data-theme="oscuro"] .cookie-banner p {
+    color: var(--text-muted);
+}

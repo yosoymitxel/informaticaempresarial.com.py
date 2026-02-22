@@ -1,0 +1,89 @@
+/* ===== TEMA CLÁSICO ===== */
+/* Gradiente azul → celeste, aspecto corporativo, bordes definidos */
+
+[data-theme="clasico"] {
+    --bg-body: linear-gradient(180deg, #e0f2fe 0%, #eff6ff 100%);
+    --bg-surface: #ffffff;
+    --bg-surface-alt: #f0f9ff;
+    --text-body: #0f172a;
+    --text-muted: #334155;
+    --text-light: #475569;
+    --border-color: #bae6fd;
+    --card-bg: #ffffff;
+    --card-border: #bae6fd;
+    --header-bg: rgba(255, 255, 255, 0.96);
+    --header-text: #0f172a;
+    --footer-bg: #1e3a8a;
+    --footer-text: #bfdbfe;
+}
+
+[data-theme="clasico"] body,
+[data-theme="clasico"] {
+    background: var(--bg-body);
+    color: var(--text-body);
+}
+
+[data-theme="clasico"] .header-surface {
+    background-color: var(--header-bg);
+    border-bottom: 2px solid var(--primary-500);
+}
+
+[data-theme="clasico"] .section-alt {
+    background-color: var(--bg-surface-alt);
+}
+
+[data-theme="clasico"] .section-white {
+    background-color: var(--bg-surface);
+}
+
+[data-theme="clasico"] .card {
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.06);
+    transition: all 0.3s ease;
+}
+
+[data-theme="clasico"] .card:hover {
+    border-color: var(--primary-500);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.12);
+    transform: translateY(-2px);
+}
+
+[data-theme="clasico"] .text-muted {
+    color: var(--text-muted);
+}
+
+[data-theme="clasico"] .text-light {
+    color: var(--text-light);
+}
+
+/* Footer oscuro corporativo */
+[data-theme="clasico"] footer {
+    background-color: var(--footer-bg) !important;
+    color: var(--footer-text) !important;
+    border-top: 3px solid var(--primary-500);
+}
+
+[data-theme="clasico"] footer a {
+    color: var(--primary-200);
+}
+
+[data-theme="clasico"] footer a:hover {
+    color: #ffffff;
+}
+
+[data-theme="clasico"] .glass-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 2px solid var(--primary-200);
+}
+
+[data-theme="clasico"] .theme-toggle-btn.inactive {
+    color: var(--dark);
+    border-color: var(--primary-300);
+}
+
+/* Botones con borde más marcado */
+[data-theme="clasico"] .btn-primary {
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}

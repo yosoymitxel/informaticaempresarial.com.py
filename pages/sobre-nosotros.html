@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="moderno">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Informática Empresarial</title>
+    <meta name="description"
+        content="Conoce la historia de Informática Empresarial, fundada en 1997 por el Lic. Juan Carlos Hassan. Empresa paraguaya líder en software contable y facturación electrónica.">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" type="image/png" href="../assets/img/logo-small.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' }, dark: '#0f172a' }, fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/themes/moderno.css">
+    <link rel="stylesheet" href="../assets/css/themes/clasico.css">
+    <link rel="stylesheet" href="../assets/css/themes/oscuro.css">
+</head>
+
+<body class="font-sans selection:bg-blue-200">
+    <!-- HEADER -->
+    <header id="header" class="sticky top-0 z-50 w-full header-surface border-b border-slate-200/60">
+        <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center space-x-3 group"><img src="../assets/img/logo-small.png"
+                    alt="Logo" class="w-12 h-12 rounded-xl shadow-lg">
+                <div><span class="block text-xl font-display font-bold text-dark leading-none">INFORMÁTICA</span><span
+                        class="block text-sm font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span></div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="../index.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Inicio</a>
+                <a href="sobre-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-primary-600">Sobre Nosotros</a>
+                <a href="productos.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Productos</a>
+                <a href="servicios.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Servicios</a>
+                <a href="trabaja-con-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Trabaja
+                    con Nosotros</a>
+                <a href="contacto.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Contacto</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <!-- Theme Switcher (desactivado)
+                <div class="hidden sm:flex items-center bg-slate-100/80 rounded-full px-1 py-1 theme-pill">
+                    <button type="button" class="theme-toggle-btn active" data-theme="moderno">Moderno</button>
+                    <button type="button" class="theme-toggle-btn inactive mx-0.5" data-theme="clasico">Clásico</button>
+                    <button type="button" class="theme-toggle-btn inactive" data-theme="oscuro">Noche</button>
+                </div> -->
+                <button id="mobile-toggle" class="lg:hidden p-2 rounded-lg bg-primary-50 text-primary-600"
+                    aria-label="Menú" aria-expanded="false">
+                    <svg class="icon-open h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg class="icon-close h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-nav" class="mobile-nav lg:hidden border-t border-slate-100 bg-white">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+                <a href="../index.html" class="py-2 font-semibold text-slate-800">Inicio</a>
+                <a href="sobre-nosotros.html" class="py-2 font-semibold text-primary-600">Sobre Nosotros</a>
+                <a href="productos.html" class="py-2 font-semibold text-slate-800">Productos</a>
+                <a href="servicios.html" class="py-2 font-semibold text-slate-800">Servicios</a>
+                <a href="trabaja-con-nosotros.html" class="py-2 font-semibold text-slate-800">Trabaja con Nosotros</a>
+                <a href="contacto.html"
+                    class="py-3 px-6 bg-primary-600 text-white rounded-xl text-center font-bold">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+        <section class="py-16 section-alt">
+            <div class="container mx-auto px-4 md:px-8 max-w-5xl">
+                <span class="text-primary-600 font-bold uppercase tracking-[0.2em] text-sm">Nuestra Historia</span>
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-4">Sobre Informática
+                    Empresarial</h1>
+            </div>
+        </section>
+
+        <section id="historia" class="py-20 section-white overflow-hidden">
+            <div class="container mx-auto px-4 md:px-8 max-w-5xl">
+                <!-- Contenedor con Float para la imagen en Desktop -->
+                <div class="lg:float-left lg:w-5/12 lg:mr-12 mb-10 lg:mb-6 relative" data-animate>
+                    <div
+                        class="absolute -top-10 -left-10 w-64 h-64 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float">
+                    </div>
+                    <div class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000"
+                            alt="Equipo" class="w-full h-auto" loading="lazy">
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl z-20 max-w-[180px] border border-slate-100 hidden md:block">
+                        <p class="text-primary-600 font-bold text-3xl mb-1">25+</p>
+                        <p class="text-slate-600 font-semibold text-[10px] uppercase tracking-widest leading-tight">Años
+                            de experiencia</p>
+                    </div>
+                </div>
+
+                <!-- Contenido de texto que envolverá la imagen -->
+                <div class="text-slate-600 text-lg leading-relaxed space-y-6" data-animate>
+                    <p>Informática Empresarial es una Empresa Paraguaya dedicada al desarrollo de software y dar
+                        soluciones a Comerciantes, Industriales y Emprendimientos en general. Para dar apoyo en la
+                        difícil tarea de administrar una Empresa.</p>
+
+                    <p>Informática Empresarial fue fundada en el año <strong class="text-dark">1997</strong> por el
+                        <strong class="text-dark">Lic. Juan Carlos Hassan</strong> viendo la necesidad de los
+                        contadores en procesar las facturas de compras y ventas para la liquidación de sus
+                        respectivos impuestos. Produciendo el afamado sistema contable llamado <strong
+                            class="text-dark">Interconta</strong> (R.G. 178/92 – evolucionando a la R.G. 173/04) un
+                        software muy amigable para contadores.
+                    </p>
+
+                    <p>Posteriormente, fue desarrollando y modernizando acompañando las novedades tecnológicas
+                        disponibles en herramientas de programación, creando <strong class="text-dark">EXACTA
+                            Contable</strong>, cómo se lo conoce actualmente.</p>
+
+                    <blockquote
+                        class="border-l-4 border-primary-600 pl-6 py-4 italic text-dark font-medium bg-primary-50 rounded-r-xl my-8">
+                        "Siendo un visionario en el año 1994, el Lic. Juan Carlos Hassan creó un sistema que trabaja
+                        en un pendrive, la cual llamó EXACTA móvil."
+                    </blockquote>
+
+                    <p>Donde los contadores podrían llevar consigo, y trabajar en cualquier computador en el local
+                        donde estuviese el cliente, y evitando trasportar y/o comprar una notebook que en la época
+                        era muy costosa (EXACTA móvil sigue disponible para los clientes que así soliciten con todas
+                        las actualizaciones que exige la S.E.T.).</p>
+
+                    <p>Informática empresarial dispone de todo tipo de software de Gestión administrativa, contable,
+                        costeo de producción, entre otras varias a medida. No importa el tamaño de su empresa o la
+                        dificultad que pueda tener. Estamos capacitados humanamente y tecnológicamente para dar
+                        soluciones a cualquier tipo de desafío administrativo y afines.</p>
+
+                    <p>Actualmente, disponemos de la tecnología de la facturación electrónica desarrollada por
+                        nuestra empresa por técnicos especializados, donde todo el proceso es de generación y uso
+                        exclusivo de nuestra empresa. Donde damos garantía del buen funcionamiento de la misma a un
+                        costo muy amigable por debajo de lo practicado por la competencia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hitos" class="py-20 section-alt">
+            <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+                <h2 class="text-3xl font-display font-bold text-dark mb-12 text-center">Hitos Importantes</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6" data-animate>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-sm shrink-0">
+                                1994</div>
+                            <div class="w-0.5 bg-primary-200 flex-1 mt-2"></div>
+                        </div>
+                        <div class="card p-6 flex-1">
+                            <h3 class="font-bold text-dark text-lg mb-1">EXACTA Móvil</h3>
+                            <p class="text-slate-600">Creación visionaria de un sistema ejecutable desde pendrive para
+                                contadores.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6" data-animate>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-sm shrink-0">
+                                1997</div>
+                            <div class="w-0.5 bg-primary-200 flex-1 mt-2"></div>
+                        </div>
+                        <div class="card p-6 flex-1">
+                            <h3 class="font-bold text-dark text-lg mb-1">Fundación</h3>
+                            <p class="text-slate-600">El Lic. Juan Carlos Hassan funda Informática Empresarial y
+                                desarrolla Interconta (R.G. 178/92).</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6" data-animate>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-sm shrink-0">
+                                2004</div>
+                            <div class="w-0.5 bg-primary-200 flex-1 mt-2"></div>
+                        </div>
+                        <div class="card p-6 flex-1">
+                            <h3 class="font-bold text-dark text-lg mb-1">EXACTA Contable</h3>
+                            <p class="text-slate-600">Evolución de Interconta con nuevas herramientas de programación
+                                (R.G. 173/04).</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6" data-animate>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-sm shrink-0">
+                                2024</div>
+                        </div>
+                        <div class="card p-6 flex-1">
+                            <h3 class="font-bold text-dark text-lg mb-1">Facturación Electrónica</h3>
+                            <p class="text-slate-600">Tecnología 100% propia de facturación electrónica a costo
+                                competitivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary-600 text-white text-center">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-3xl font-display font-bold mb-4">¿Listo para optimizar tu empresa?</h2>
+                <p class="text-primary-100 mb-8 max-w-xl mx-auto">Contáctanos y descubre cómo transformar tu negocio.
+                </p><a href="contacto.html"
+                    class="inline-flex px-8 py-4 bg-white text-primary-600 font-bold rounded-2xl hover:bg-primary-50 transition-colors shadow-xl">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div><a href="../index.html" class="flex items-center space-x-3 mb-4"><img
+                            src="../assets/img/logo-small.png" alt="Logo" class="w-10 h-10 rounded-lg">
+                        <div><span
+                                class="block text-lg font-display font-bold text-dark leading-none">INFORMÁTICA</span><span
+                                class="block text-xs font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-500">Software contable y facturación electrónica desde 1997.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Navegación</h4>
+                    <div class="flex flex-col space-y-2 text-sm text-slate-500"><a href="../index.html"
+                            class="hover:text-primary-600">Inicio</a><a href="productos.html"
+                            class="hover:text-primary-600">Productos</a><a href="servicios.html"
+                            class="hover:text-primary-600">Servicios</a><a href="contacto.html"
+                            class="hover:text-primary-600">Contacto</a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Contacto</h4>
+                    <div class="text-sm text-slate-500 space-y-3">
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-primary-600"></i>
+                            <a href="tel:+595991729741" class="hover:text-primary-600 transition-colors">+595 991 729
+                                741</a>
+                        </p>
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-primary-600"></i>
+                            <a href="mailto:info@informaticaempresarial.com.py"
+                                class="hover:text-primary-600 transition-colors">info@informaticaempresarial.com.py</a>
+                        </p>
+                        <p class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-primary-600 mt-1"></i>
+                            <a href="https://maps.app.goo.gl/UmmHzRidnDjrwUHB8" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-primary-600 transition-colors">6 de Enero c/
+                                Tte Ettiene, Fdo de la
+                                Mora</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-100 mt-8 pt-6 text-center text-sm text-slate-400">
+                <p>©
+                    <script>document.write(new Date().getFullYear())</script> Informática Empresarial · Paraguay
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/595991729741" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Chatear por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <button id="scroll-top" aria-label="Ir al inicio"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

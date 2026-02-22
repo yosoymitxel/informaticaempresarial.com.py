@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="moderno">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos EXACTA | Informática Empresarial</title>
+    <meta name="description"
+        content="Conoce todos los productos de la línea EXACTA: Sistema Contable, Facturación Punto de Venta, Global, Facturación Electrónica, Costeo de Producción y Software a Medida.">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" type="image/png" href="../assets/img/logo-small.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' }, dark: '#0f172a' }, fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/themes/moderno.css">
+    <link rel="stylesheet" href="../assets/css/themes/clasico.css">
+    <link rel="stylesheet" href="../assets/css/themes/oscuro.css">
+</head>
+
+<body class="font-sans selection:bg-blue-200">
+    <header id="header" class="sticky top-0 z-50 w-full header-surface border-b border-slate-200/60">
+        <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center space-x-3 group"><img src="../assets/img/logo-small.png"
+                    alt="Logo" class="w-12 h-12 rounded-xl shadow-lg">
+                <div><span class="block text-xl font-display font-bold text-dark leading-none">INFORMÁTICA</span><span
+                        class="block text-sm font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span></div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="../index.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Inicio</a>
+                <a href="sobre-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Sobre
+                    Nosotros</a>
+                <a href="productos.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-primary-600">Productos</a>
+                <a href="servicios.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Servicios</a>
+                <a href="trabaja-con-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Trabaja
+                    con Nosotros</a>
+                <a href="contacto.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Contacto</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <!-- Theme Switcher (desactivado)
+                <div class="hidden sm:flex items-center bg-slate-100/80 rounded-full px-1 py-1 theme-pill"><button
+                        type="button" class="theme-toggle-btn active" data-theme="moderno">Moderno</button><button
+                        type="button" class="theme-toggle-btn inactive mx-0.5"
+                        data-theme="clasico">Clásico</button><button type="button" class="theme-toggle-btn inactive"
+                        data-theme="oscuro">Noche</button></div> -->
+                <button id="mobile-toggle" class="lg:hidden p-2 rounded-lg bg-primary-50 text-primary-600"
+                    aria-label="Menú" aria-expanded="false"><svg class="icon-open h-6 w-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg><svg class="icon-close h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg></button>
+            </div>
+        </nav>
+        <div id="mobile-nav" class="mobile-nav lg:hidden border-t border-slate-100 bg-white">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3"><a href="../index.html"
+                    class="py-2 font-semibold text-slate-800">Inicio</a><a href="sobre-nosotros.html"
+                    class="py-2 font-semibold text-slate-800">Sobre Nosotros</a><a href="productos.html"
+                    class="py-2 font-semibold text-primary-600">Productos</a><a href="servicios.html"
+                    class="py-2 font-semibold text-slate-800">Servicios</a><a href="trabaja-con-nosotros.html"
+                    class="py-2 font-semibold text-slate-800">Trabaja con Nosotros</a><a href="contacto.html"
+                    class="py-3 px-6 bg-primary-600 text-white rounded-xl text-center font-bold">Contacto</a></div>
+        </div>
+    </header>
+
+    <main class="">
+        <section class="py-16 section-alt">
+            <div class="container mx-auto px-4 md:px-8 max-w-6xl"><span
+                    class="text-primary-600 font-bold uppercase tracking-[0.2em] text-sm">Línea EXACTA</span>
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-4">Productos</h1>
+                <p class="text-slate-600 text-lg max-w-3xl">Selecciona uno de nuestros productos para ver los detalles
+                    técnicos y beneficios que ofrecemos para tu empresa.</p>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS con Accordion -->
+        <section id="productos-lista" class="py-20 section-white">
+            <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+                <div class="flex flex-col lg:flex-row gap-16">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-32">
+                            <h2 class="text-3xl font-display font-bold text-dark mb-6">Nuestras Soluciones</h2>
+                            <p class="text-slate-600 mb-8">Selecciona uno de nuestros productos para ver los detalles
+                                técnicos y beneficios.</p>
+                            <div class="p-6 bg-primary-600 rounded-3xl text-white shadow-xl shadow-primary-500/20">
+                                <p class="font-bold text-xl mb-2 italic">¿Necesitas algo a medida?</p>
+                                <p class="text-primary-100 text-sm mb-4">Analizamos tus procesos y creamos el software
+                                    que tu flujo de trabajo demanda.</p>
+                                <a href="contacto.html"
+                                    class="inline-block py-2 px-6 bg-white text-primary-600 font-bold rounded-xl text-sm hover:bg-primary-50 transition-colors">Solicitar
+                                    Consultoría</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-2/3 space-y-4">
+                        <!-- EXACTA Contable -->
+                        <div id="exacta-contable"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span
+                                    class="text-lg font-bold text-dark group-hover:text-primary-600 transition-colors">SISTEMA
+                                    CONTABLE EXACTA 2024</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <p class="text-slate-600 mb-4 font-semibold">Preparado para trabajar en forma
+                                        automática con la facturación electrónica:</p>
+                                    <div class="grid md:grid-cols-2 gap-3 text-sm text-slate-600">
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Adaptado a la RG
+                                                90/21.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Cierre y reapertura de
+                                                periodo I.R.A.G.R.O. (julio a junio).</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Cálculo automático de
+                                                flujo de efectivo.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Migración de otro
+                                                sistema de facturación (que exporten a Excel) al sistema exacta
+                                                contable. (Sujeto a estudio técnico de factibilidad).</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Resumen de Rubros e
+                                                Incisos para llenado del formulario 120 V4.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Reportes de los Estados
+                                                Financieros según la RG 49 y reportes internos.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Cuenta corriente de
+                                                proveedores y clientes.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Multiusuario.</span>
+                                        </div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Multiempresas (sin
+                                                límites de creación de empresas).</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Artículo compuesto y
+                                                generación de orden de trabajo (OT).</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Cuadro de Revalúo según
+                                                formato de la RG 49.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Libro
+                                                Inventario.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Exportación a Excel de
+                                                los libros.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Cálculo automático de
+                                                ganancias o pérdidas por diferencia de cambio en compras, ventas, cobros
+                                                y pagos.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Control de vencimiento
+                                                de timbrado (compras y ventas).</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Balance
+                                                Multi-moneda.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Vista preliminar del
+                                                diario durante la carga de compras y ventas con opción de
+                                                asentar.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Libro Banco.</span>
+                                        </div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Sistema
+                                                cliente-servidor.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Exportación de libros
+                                                en formatos de la RG 90/21 determinados por la S.E.T.</span></div>
+                                        <div class="flex items-start space-x-2"><span
+                                                class="text-primary-600 font-bold">✓</span><span>Entre muchos
+                                                otros.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXACTA Móvil -->
+                        <div id="exacta-movil"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-lg font-bold text-dark group-hover:text-primary-600">SISTEMA CONTABLE
+                                    EXACTA MÓVIL 2024</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <p class="text-slate-600 mb-4 font-semibold">Preparado para trabajar en forma
+                                        automática con la facturación electrónica:</p>
+                                    <p class="text-slate-600">Es el mismo del sistema contable con instalación fija,
+                                        solo que esta trabaja en un pendrive y funciona en cualquier computadora que
+                                        tenga Windows instalado.</p>
+                                    <img src="../assets/img/contable-movil.jpg" alt="EXACTA Móvil"
+                                        class="mt-4 rounded-2xl shadow-md max-w-sm" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Punto de Venta -->
+                        <div id="punto-de-venta"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-lg font-bold text-dark group-hover:text-primary-600">EXACTA
+                                    FACTURACIÓN PUNTO DE VENTA 2024</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <p class="text-slate-600 mb-4 font-semibold">Puede emitir factura física y/o
+                                        facturación electrónica.</p>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Compras</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Control de Stock</li>
+                                                <li>• Criterio promedio ponderado de valoración de inventario</li>
+                                                <li>• Ingreso de mercaderías</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Ajustes</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Ajustes de stock</li>
+                                                <li>• Ajuste de precios</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Ventas</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Emisión de tickets / facturas</li>
+                                                <li>• Arqueo de caja</li>
+                                                <li>• Descuento automático de stock</li>
+                                                <li>• Formas de cobro (efectivo, tarjetas, cheques, etc.)</li>
+                                                <li>• Resumen total de venta</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Cuenta Corriente</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Ficha de proveedores y clientes</li>
+                                                <li>• Estado de cuenta de clientes y proveedores</li>
+                                                <li>• Cuentas por cobrar y a pagar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-xs text-slate-500"><strong>Contabilidad:</strong> Adecuado a la
+                                        resolución RG 90/21 y la 412/04, cumple las normas que exige el Ministerio de
+                                        Hacienda para llevar por medios informáticos automatizados los procesos
+                                        contables.</p>
+                                    <img src="../assets/img/punto-de-venta.jpg" alt="Punto de Venta"
+                                        class="mt-4 rounded-2xl shadow-md max-w-sm" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Global -->
+                        <div id="exacta-global"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-lg font-bold text-dark group-hover:text-primary-600">FACTURACIÓN
+                                    EXACTA GLOBAL 2024</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <p class="text-slate-600 mb-4 text-sm">Sistema EXACTA Global nuestra versión 2024
+                                        trae importante mejoras y herramientas a modo de englobar la administración y la
+                                        contabilidad. Donde todos los procesos son automáticos, esta versión es mucho
+                                        más robusto que las anteriores, donde se agregó los módulos Bancos, Órdenes de
+                                        pago que hacen a la tesorería y se rediseñó todos los procesos para ser más
+                                        completa y sencilla la administración de una empresa.</p>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Facturación</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Presupuestos</li>
+                                                <li>• Emisión de facturas</li>
+                                                <li>• Emisión Notas de crédito/débito</li>
+                                                <li>• Emisión de nota de remisión/envío</li>
+                                                <li>• Centro de costos varios</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Control de Stock</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Compras corporativas y por fondo fijo</li>
+                                                <li>• Descuento automático de Stock</li>
+                                                <li>• Control de inventario, lote y vencimiento</li>
+                                                <li>• Ajustes de stock y precios</li>
+                                                <li>• Estadística de artículos por ventas y compras</li>
+                                                <li>• Control de stock mínimo</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Cuenta Corriente</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Ficha de clientes y proveedores</li>
+                                                <li>• Estado de cuenta de clientes y proveedores</li>
+                                                <li>• Cuentas por cobrar y a pagar</li>
+                                                <li>• Discriminación de formas de pagos y exportación a planilla</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Tesorería</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Órdenes de pago</li>
+                                                <li>• Bancos</li>
+                                                <li>• Conciliación de cuentas corrientes bancarias</li>
+                                                <li>• Cobros clientes · Pagos a proveedores</li>
+                                                <li>• Impresión de cheques</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-xs text-slate-500"><strong>Contabilidad:</strong> Adecuado a la
+                                        R.G. 90/21 y la 412/04.</p>
+                                    <img src="../assets/img/global.jpg" alt="EXACTA Global"
+                                        class="mt-4 rounded-2xl shadow-md max-w-sm" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Facturación Electrónica -->
+                        <div id="facturacion-electronica"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-lg font-bold text-dark group-hover:text-primary-600">FACTURACIÓN
+                                    ELECTRÓNICA EXACTA 2024</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <p class="text-slate-600 mb-4 font-semibold">Integrado a la contabilidad.</p>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Facturación Electrónica</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Emisión de Factura electrónica</li>
+                                                <li>• Factura electrónica de exportación</li>
+                                                <li>• Factura electrónica de importación</li>
+                                                <li>• Nota de remisión electrónica</li>
+                                                <li>• Nota de crédito electrónica</li>
+                                                <li>• Nota de débito electrónica</li>
+                                                <li>• Autofactura electrónica</li>
+                                                <li>• Exportación a planilla Excel</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Módulos incluidos</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Control de Stock y valoración de inventario</li>
+                                                <li>• Ventas: tickets, arqueo, formas de cobro</li>
+                                                <li>• Cuenta Corriente completa</li>
+                                                <li>• Ingreso de mercaderías</li>
+                                                <li>• Ajustes de stock y precios</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-xs text-slate-500"><strong>Contabilidad:</strong> Adecuado a la
+                                        resolución RG 90/21 y la 412/04.</p>
+                                    <a href="facturacion-electronica.html"
+                                        class="inline-flex mt-4 px-6 py-2 bg-primary-600 text-white font-bold rounded-xl text-sm hover:bg-primary-700 transition-colors">Ver
+                                        página dedicada →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Costeo de Producción -->
+                        <div id="costeo"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-lg font-bold text-dark group-hover:text-primary-600">COSTEO DE
+                                    PRODUCCIÓN</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <p class="text-slate-600 mb-4">El costeo de producción es el proceso de recopilar,
+                                        clasificar y asignar los costos asociados con la producción de un bien o
+                                        servicio. Estos costos incluyen la materia prima, la mano de obra, los gastos
+                                        indirectos de fabricación y los gastos generales de fabricación con contabilidad
+                                        de costos.</p>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Características Funcionales</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Transferencia de materia prima e insumos a productos en proceso
+                                                </li>
+                                                <li>• Transferencia de productos en proceso a semiterminados y/o
+                                                    elaborados</li>
+                                                <li>• Cálculo de mano directa, indirecta y carga fabril</li>
+                                                <li>• Gastos indirectos de fabricación</li>
+                                                <li>• Costeo promedio ponderado entre tandas de producción</li>
+                                                <li>• Control de existencias de productos elaborados</li>
+                                                <li>• Control de existencias de materia prima, materiales e insumos</li>
+                                                <li>• Gestión de mermas y desperdicios para reciclado</li>
+                                                <li>• Informes afines a la gestión fabril</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                                            <h4 class="font-bold text-primary-700 mb-2">Características Operativas</h4>
+                                            <ul class="text-sm text-slate-600 space-y-1">
+                                                <li>• Multiusuario</li>
+                                                <li>• Manejo de perfiles de usuario con asignación de permisos</li>
+                                                <li>• Asignación de perfiles de acceso a las distintas opciones del menú
+                                                    por usuario y programa</li>
+                                                <li>• Restricciones de acceso a información sensible</li>
+                                                <li>• Genera informes imprimibles o en pantalla</li>
+                                                <li>• Generador de informes, reportes, consultas y listados
+                                                    personalizados</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-6 space-y-3 text-sm text-slate-600">
+                                        <p><strong>Importancia:</strong> Permite determinar el precio de venta,
+                                            controlar costos y tomar decisiones de producción informadas.</p>
+                                        <p><strong>Beneficios:</strong> Mejora la toma de decisiones, reduce costos y
+                                            mejora la competitividad en el mercado.</p>
+                                    </div>
+                                    <p class="mt-4 text-xs text-slate-500"><strong>Contabilidad:</strong> Adecuado a la
+                                        resolución RG 90/21 y la 412/04.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Software a Medida -->
+                        <div id="software-medida"
+                            class="accordion-item bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+                            data-animate="fadeInUp">
+                            <button
+                                class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left group">
+                                <span class="text-lg font-bold text-dark group-hover:text-primary-600">SOFTWARE A
+                                    MEDIDA</span>
+                                <svg class="accordion-icon h-6 w-6 text-slate-400 group-hover:text-primary-600 transition-all duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-8 pb-8">
+                                    <div class="space-y-3 text-slate-600">
+                                        <p>Se adapta a sus necesidades específicas. Un software de facturación a medida
+                                            se adaptará a sus necesidades específicas, lo que significa que no tendrá
+                                            que lidiar con funciones que no necesita.</p>
+                                        <p>Es más eficiente. Un software de facturación a medida puede ser más eficiente
+                                            que un software genérico, lo que le ayudará a ahorrar tiempo y dinero.</p>
+                                        <p>Es más seguro. Un software de facturación a medida puede ser más seguro que
+                                            un software genérico, lo que protegerá sus datos sensibles.</p>
+                                        <ul class="list-disc list-inside space-y-1 ml-4">
+                                            <li>Gestión de clientes y proveedores.</li>
+                                            <li>Gestión de inventario.</li>
+                                            <li>Facturación electrónica legal.</li>
+                                            <li>Informes personalizados para decisiones informadas.</li>
+                                        </ul>
+                                    </div>
+                                    <img src="../assets/img/software-medida.jpg" alt="Software a Medida"
+                                        class="mt-4 rounded-2xl shadow-md max-w-sm" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div><a href="../index.html" class="flex items-center space-x-3 mb-4"><img
+                            src="../assets/img/logo-small.png" alt="Logo" class="w-10 h-10 rounded-lg">
+                        <div><span
+                                class="block text-lg font-display font-bold text-dark leading-none">INFORMÁTICA</span><span
+                                class="block text-xs font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-500">Software contable y facturación electrónica desde 1997.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Navegación</h4>
+                    <div class="flex flex-col space-y-2 text-sm text-slate-500"><a href="../index.html"
+                            class="hover:text-primary-600">Inicio</a><a href="sobre-nosotros.html"
+                            class="hover:text-primary-600">Sobre Nosotros</a><a href="servicios.html"
+                            class="hover:text-primary-600">Servicios</a><a href="contacto.html"
+                            class="hover:text-primary-600">Contacto</a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Contacto</h4>
+                    <div class="text-sm text-slate-500 space-y-3">
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-primary-600"></i>
+                            <a href="tel:+595991729741" class="hover:text-primary-600 transition-colors">+595 991 729
+                                741</a>
+                        </p>
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-primary-600"></i>
+                            <a href="mailto:info@informaticaempresarial.com.py"
+                                class="hover:text-primary-600 transition-colors">info@informaticaempresarial.com.py</a>
+                        </p>
+                        <p class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-primary-600 mt-1"></i>
+                            <a href="https://maps.app.goo.gl/UmmHzRidnDjrwUHB8" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-primary-600 transition-colors">6 de Enero c/
+                                Tte Ettiene, Fdo de la
+                                Mora</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-100 mt-8 pt-6 text-center text-sm text-slate-400">
+                <p>©
+                    <script>document.write(new Date().getFullYear())</script> Informática Empresarial · Paraguay
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/595991729741" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Chatear por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <button id="scroll-top" aria-label="Ir al inicio"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components/accordion.js"></script>
+</body>
+
+</html>

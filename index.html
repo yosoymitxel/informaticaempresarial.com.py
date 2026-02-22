@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="moderno">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informática Empresarial | Software Contable y Facturación Electrónica EXACTA</title>
+    <meta name="description"
+        content="Informática Empresarial desarrolla software contable y de facturación electrónica EXACTA en Paraguay. Soluciones para empresas, comercios e industrias desde 1997.">
+    <meta name="keywords"
+        content="facturación electrónica Paraguay, software contable, EXACTA, informática empresarial, sistemas administrativos, costeo de producción">
+    <meta name="author" content="Informática Empresarial">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://informaticaempresarial.com.py/">
+    <meta property="og:title" content="Informática Empresarial | Software y Facturación Electrónica EXACTA">
+    <meta property="og:description"
+        content="Optimiza tu contabilidad y facturación electrónica con EXACTA y nuestras soluciones administrativas integrales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://informaticaempresarial.com.py/">
+    <meta property="og:locale" content="es_PY">
+    <meta property="og:image" content="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="assets/img/logo-small.png">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
+                            400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
+                            800: '#1e40af', 900: '#1e3a8a'
+                        },
+                        dark: '#0f172a',
+                        accent: '#f59e0b'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/themes/moderno.css">
+    <link rel="stylesheet" href="assets/css/themes/clasico.css">
+    <link rel="stylesheet" href="assets/css/themes/oscuro.css">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Informática Empresarial",
+        "url": "https://informaticaempresarial.com.py",
+        "logo": "https://informaticaempresarial.com.py/assets/img/logo.png",
+        "description": "Empresa paraguaya dedicada al desarrollo de software contable y de facturación electrónica EXACTA.",
+        "foundingDate": "1997",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6 de Enero n°1734 c/ Tte Ettiene",
+            "addressLocality": "Fernando de la Mora",
+            "addressRegion": "Central",
+            "addressCountry": "PY"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+595991729741",
+            "contactType": "customer service",
+            "email": "info@informaticaempresarial.com.py",
+            "availableLanguage": "Spanish"
+        }
+    }
+    </script>
+</head>
+
+<body class="font-sans selection:bg-blue-200">
+    <noscript>
+        <div class="bg-slate-900 text-white text-center py-4">
+            Para una experiencia completa, activa JavaScript. Tel: +595 991 729 741 · Email:
+            info@informaticaempresarial.com.py
+        </div>
+    </noscript>
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="header" class="sticky top-0 z-50 w-full header-surface border-b border-slate-200/60">
+        <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group" aria-label="Ir al inicio">
+                <img src="assets/img/logo-small.png" alt="Logo Informática Empresarial"
+                    class="w-12 h-12 rounded-xl shadow-lg transform group-hover:rotate-6 transition-transform duration-300">
+                <div>
+                    <span class="block text-xl font-display font-bold text-dark leading-none">INFORMÁTICA</span>
+                    <span class="block text-sm font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-primary-600">Inicio</a>
+                <a href="pages/sobre-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Sobre
+                    Nosotros</a>
+                <a href="pages/productos.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Productos</a>
+                <a href="pages/servicios.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Servicios</a>
+                <a href="pages/trabaja-con-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Trabaja
+                    con Nosotros</a>
+                <a href="pages/contacto.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Contacto</a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <!-- Theme Switcher 
+                <div class="hidden sm:flex items-center bg-slate-100/80 rounded-full px-1 py-1 theme-pill">
+                    <button type="button" class="theme-toggle-btn active" data-theme="moderno">Moderno</button>
+                    <button type="button" class="theme-toggle-btn inactive mx-0.5" data-theme="clasico">Clásico</button>
+                    <button type="button" class="theme-toggle-btn inactive" data-theme="oscuro">Noche</button>
+                </div> -->
+
+                <!-- Mobile Toggle -->
+                <button id="mobile-toggle" class="lg:hidden p-2 rounded-lg bg-primary-50 text-primary-600"
+                    aria-label="Abrir menú" aria-expanded="false">
+                    <svg class="icon-open h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg class="icon-close h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-nav" class="mobile-nav lg:hidden border-t border-slate-100 bg-white">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 font-semibold text-slate-800">Inicio</a>
+                <a href="pages/sobre-nosotros.html" class="py-2 font-semibold text-slate-800">Sobre Nosotros</a>
+                <a href="pages/productos.html" class="py-2 font-semibold text-slate-800">Productos</a>
+                <a href="pages/servicios.html" class="py-2 font-semibold text-slate-800">Servicios</a>
+                <a href="pages/trabaja-con-nosotros.html" class="py-2 font-semibold text-slate-800">Trabaja con
+                    Nosotros</a>
+                <a href="pages/contacto.html"
+                    class="py-3 px-6 bg-primary-600 text-white rounded-xl text-center font-bold">Contacto</a>
+                <!-- Mobile theme switcher (desactivado)
+                <div class="flex items-center space-x-2 pt-2 border-t border-slate-100">
+                    <button type="button" class="theme-toggle-btn active text-xs" data-theme="moderno">Moderno</button>
+                    <button type="button" class="theme-toggle-btn inactive text-xs"
+                        data-theme="clasico">Clásico</button>
+                    <button type="button" class="theme-toggle-btn inactive text-xs" data-theme="oscuro">Noche</button>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main>
+        <!-- ===== HERO ===== -->
+        <section id="inicio" class="relative overflow-hidden">
+            <div class="relative min-h-[75vh] flex items-center">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-indigo-900/90 to-slate-900/95">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000"
+                        alt="Entorno empresarial moderno"
+                        class="w-full h-full object-cover mix-blend-overlay opacity-60" loading="eager">
+                </div>
+                <div class="container mx-auto px-4 md:px-8 relative z-10 py-20">
+                    <div class="max-w-3xl" data-animate>
+                        <span
+                            class="inline-block py-1 px-3 bg-primary-500/20 text-primary-200 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                            Innovación paraguaya desde 1997
+                        </span>
+                        <h1
+                            class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
+                            Informática Empresarial
+                        </h1>
+                        <p class="text-lg md:text-2xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
+                            Optimiza tu proceso de facturación con nuestro sistema electrónico, ¡adiós a los papeles y
+                            complicaciones!
+                        </p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="pages/productos.html"
+                                class="group flex items-center justify-center space-x-2 px-8 py-4 bg-primary-600 hover:bg-primary-500 text-white font-bold rounded-2xl transition-all shadow-2xl shadow-primary-500/25">
+                                <span>Ver soluciones EXACTA</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 transform group-hover:translate-x-1 transition-transform"
+                                    viewBox="0 0 24 24" stroke="currentColor" fill="none">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </a>
+                            <a href="pages/sobre-nosotros.html"
+                                class="flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-2xl backdrop-blur-md transition-all border border-white/10">
+                                Conócenos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BIENVENIDA ===== -->
+        <section id="bienvenida" class="py-16 section-white">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="max-w-3xl mx-auto text-center" data-animate>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark mb-4">¡Bienvenido a Informática
+                        Empresarial!</h2>
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        En esta página encontrarás todas las soluciones que necesites para tu empresa, comercio, o
+                        negocio. Nos alegra tenerte aquí.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HIGHLIGHTS / PRODUCTOS RESUMEN ===== -->
+        <section id="soluciones" class="py-20 section-alt">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="grid lg:grid-cols-3 gap-10 items-start">
+                    <div class="lg:col-span-1" data-animate>
+                        <h2 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">
+                            Facturación electrónica y contabilidad integradas.
+                        </h2>
+                        <p class="text-slate-600 mb-6">
+                            EXACTA automatiza tu facturación electrónica, contabilidad y flujo de caja, cumpliendo las
+                            resoluciones vigentes de la S.E.T.
+                        </p>
+                        <a href="pages/servicios.html"
+                            class="inline-flex items-center px-6 py-3 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-primary-700 transition-colors text-sm">
+                            Ver servicios complementarios
+                        </a>
+                    </div>
+                    <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                        <a href="pages/productos.html"
+                            class="card text-left p-6 hover:bg-primary-50 transition-all shadow-sm hover:shadow-lg flex flex-col justify-between h-full"
+                            data-animate>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-widest mb-4 w-fit">Contabilidad</span>
+                            <h3 class="text-lg font-bold text-dark mb-2">EXACTA Contable 2024</h3>
+                            <p class="text-sm text-slate-600">Sistema contable multiempresa, adaptado a la RG 90/21 y
+                                preparado para trabajar de forma automática con la facturación electrónica.</p>
+                        </a>
+                        <a href="pages/facturacion-electronica.html"
+                            class="card text-left p-6 hover:bg-primary-50 transition-all shadow-sm hover:shadow-lg flex flex-col justify-between h-full"
+                            data-animate>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-widest mb-4 w-fit">Facturación</span>
+                            <h3 class="text-lg font-bold text-dark mb-2">EXACTA Facturación Electrónica</h3>
+                            <p class="text-sm text-slate-600">Emisión de todos los comprobantes electrónicos exigidos
+                                por la S.E.T., integrado a la contabilidad.</p>
+                        </a>
+                        <a href="pages/productos.html#costeo"
+                            class="card text-left p-6 hover:bg-primary-50 transition-all shadow-sm hover:shadow-lg flex flex-col justify-between h-full"
+                            data-animate>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-widest mb-4 w-fit">Industria</span>
+                            <h3 class="text-lg font-bold text-dark mb-2">Producción y costeo</h3>
+                            <p class="text-sm text-slate-600">Módulo industrial para costeo de producción, control de
+                                lote, mermas y valorización de inventarios.</p>
+                        </a>
+                        <a href="pages/servicios.html"
+                            class="card text-left p-6 hover:bg-primary-50 transition-all shadow-sm hover:shadow-lg flex flex-col justify-between h-full"
+                            data-animate>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-widest mb-4 w-fit">Servicios</span>
+                            <h3 class="text-lg font-bold text-dark mb-2">Servicios IT y cloud</h3>
+                            <p class="text-sm text-slate-600">Infraestructura, licenciamiento y servicios gestionados
+                                para que tu operación tecnológica esté siempre disponible.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ¿POR QUÉ ELEGIRNOS? ===== -->
+        <section id="ventajas" class="py-24 bg-dark text-white">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="text-center mb-20" data-animate>
+                    <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">¿Por qué elegirnos?</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Nuestro compromiso es con la excelencia y el crecimiento
+                        sostenible de tu negocio.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-primary-600 transition-all duration-500 group"
+                        data-animate>
+                        <div
+                            class="w-14 h-14 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-primary-400 group-hover:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Servicios de Calidad</h3>
+                        <p class="text-slate-400 group-hover:text-primary-50">Estándares internacionales aplicados a
+                            soluciones locales con rigurosidad técnica.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-primary-600 transition-all duration-500 group"
+                        data-animate>
+                        <div
+                            class="w-14 h-14 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-primary-400 group-hover:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Respuesta Rápida</h3>
+                        <p class="text-slate-400 group-hover:text-primary-50">Soporte técnico ágil y personalizado para
+                            que tu operación nunca se detenga.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-primary-600 transition-all duration-500 group"
+                        data-animate>
+                        <div
+                            class="w-14 h-14 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-primary-400 group-hover:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Garantía Total</h3>
+                        <p class="text-slate-400 group-hover:text-primary-50">Software certificado y autorizado por las
+                            entidades reguladoras correspondientes.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-primary-600 transition-all duration-500 group"
+                        data-animate>
+                        <div
+                            class="w-14 h-14 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-primary-400 group-hover:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Autorizado</h3>
+                        <p class="text-slate-400 group-hover:text-primary-50">Empresa habilitada por los organismos
+                            reguladores del Paraguay para facturación electrónica.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-primary-600 transition-all duration-500 group"
+                        data-animate>
+                        <div
+                            class="w-14 h-14 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-primary-400 group-hover:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Trabajadores Capacitados</h3>
+                        <p class="text-slate-400 group-hover:text-primary-50">Equipo técnico especializado con formación
+                            continua en las últimas tecnologías.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-primary-600 transition-all duration-500 group"
+                        data-animate>
+                        <div
+                            class="w-14 h-14 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-primary-400 group-hover:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Disponibilidad de Tiempo</h3>
+                        <p class="text-slate-400 group-hover:text-primary-50">Atención flexible adaptada a los horarios
+                            y urgencias de tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE NOSOTROS RESUMEN ===== -->
+        <section id="sobrenosotros" class="py-24 section-alt relative overflow-hidden">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2 relative" data-animate>
+                        <div
+                            class="absolute -top-10 -left-10 w-64 h-64 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float">
+                        </div>
+                        <div class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000"
+                                alt="Equipo de Informática Empresarial" class="w-full h-auto" loading="lazy">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-white p-8 rounded-3xl shadow-xl z-20 max-w-xs border border-slate-100">
+                            <p class="text-primary-600 font-bold text-4xl mb-1">25+</p>
+                            <p class="text-slate-600 font-semibold text-sm leading-tight uppercase tracking-widest">Años
+                                de experiencia en el mercado</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2" data-animate>
+                        <span class="text-primary-600 font-bold uppercase tracking-[0.2em] text-sm">Nuestra
+                            Historia</span>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-8">Innovación Continua
+                            desde 1997</h2>
+                        <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                            <p>Fundada por el <span class="text-dark font-bold">Lic. Juan Carlos Hassan</span>,
+                                iniciamos nuestro camino con "Interconta", una solución pionera para contadores.</p>
+                            <p>Evolucionamos a <span class="text-dark font-bold">"EXACTA Contable"</span>, y ya en 1994
+                                marcamos un hito con "EXACTA móvil", priorizando la portabilidad cuando nadie lo hacía.
+                            </p>
+                            <blockquote
+                                class="border-l-4 border-primary-600 pl-6 py-2 italic text-dark font-medium bg-primary-50 rounded-r-xl">
+                                "Nuestra tecnología de facturación electrónica es 100% propia, diseñada para adaptarse a
+                                las necesidades reales de las empresas paraguayas."
+                            </blockquote>
+                            <p>Hoy, proveemos soluciones a medida para empresas de cualquier envergadura, garantizando
+                                eficiencia y cumplimiento normativo.</p>
+                        </div>
+                        <a href="pages/sobre-nosotros.html"
+                            class="inline-flex items-center mt-8 px-6 py-3 rounded-2xl bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors text-sm">
+                            Leer historia completa →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA: TRABAJA CON NOSOTROS ===== -->
+        <section id="trabaja" class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-primary-900">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=2000"
+                    alt="Oportunidades laborales" class="w-full h-full object-cover opacity-20" loading="lazy">
+            </div>
+            <div class="container mx-auto px-4 md:px-8 relative z-10 text-center text-white" data-animate>
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-8">Únete a nuestro Equipo</h2>
+                    <p class="text-xl text-primary-100 mb-10 leading-relaxed">¿Eres Contador, Ingeniero IT, Técnico de
+                        Soporte o estudiante apasionado por la tecnología? Queremos conocerte.</p>
+                    <div class="inline-block p-8 bg-white/10 backdrop-blur-xl rounded-[2.5rem] border border-white/20">
+                        <p class="text-sm font-semibold uppercase tracking-widest text-primary-300 mb-4">Envíanos tu CV
+                            a:</p>
+                        <a href="mailto:trabajeconnosotros@informaticaempresarial.com.py"
+                            class="text-2xl md:text-3xl font-bold hover:text-primary-400 transition-colors break-all underline decoration-primary-500 decoration-2 underline-offset-8">
+                            trabajeconnosotros@informaticaempresarial.com.py
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTO RESUMEN ===== -->
+        <section id="contacto" class="py-24 section-white">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="grid lg:grid-cols-2 gap-20">
+                    <div data-animate>
+                        <h2 class="text-4xl font-display font-bold text-dark mb-8">Contáctanos</h2>
+                        <p class="text-slate-600 mb-12 text-lg">Estamos listos para llevar tu empresa al siguiente nivel
+                            tecnológico. Visítanos o escríbenos directamente.</p>
+                        <div class="space-y-8">
+                            <div class="flex items-start space-x-6">
+                                <div
+                                    class="w-12 h-12 bg-primary-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-primary-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Nuestra Oficina</h4>
+                                    <a href="https://maps.app.goo.gl/UmmHzRidnDjrwUHB8" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-slate-600 hover:text-primary-600 transition-colors">
+                                        6 de Enero n°1734 c/ Tte Ettiene – Fernando de la Mora – Zona Norte | PARAGUAY
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-6">
+                                <div
+                                    class="w-12 h-12 bg-primary-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope text-primary-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Email</h4>
+                                    <p class="text-slate-600"><a href="mailto:info@informaticaempresarial.com.py"
+                                            class="hover:text-primary-600 transition-colors">info@informaticaempresarial.com.py</a>
+                                    </p>
+                                    <p class="text-slate-600"><a href="mailto:empresarialhome@hotmail.com"
+                                            class="hover:text-primary-600 transition-colors">empresarialhome@hotmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-6">
+                                <div
+                                    class="w-12 h-12 bg-primary-50 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-primary-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Teléfono / WhatsApp</h4>
+                                    <p class="text-slate-600"><a href="tel:+595991729741"
+                                            class="hover:text-primary-600 transition-colors">+595 991 729 741</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="pages/contacto.html"
+                            class="inline-flex items-center mt-10 px-6 py-3 rounded-2xl bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors text-sm">
+                            Ir a formulario de contacto →
+                        </a>
+                    </div>
+                    <div class="bg-slate-50 p-10 rounded-[3rem] shadow-sm border border-slate-100 card" data-animate>
+                        <form action="#" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="contact-name"
+                                        class="block text-sm font-bold text-dark mb-2">Nombre</label>
+                                    <input id="contact-name" type="text" placeholder="Tu nombre"
+                                        class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:border-primary-600 focus:ring-4 focus:ring-primary-50 outline-none transition-all">
+                                </div>
+                                <div>
+                                    <label for="contact-email"
+                                        class="block text-sm font-bold text-dark mb-2">Email</label>
+                                    <input id="contact-email" type="email" placeholder="tu@email.com"
+                                        class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:border-primary-600 focus:ring-4 focus:ring-primary-50 outline-none transition-all">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="contact-subject"
+                                    class="block text-sm font-bold text-dark mb-2">Asunto</label>
+                                <input id="contact-subject" type="text" placeholder="¿En qué podemos ayudarte?"
+                                    class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:border-primary-600 focus:ring-4 focus:ring-primary-50 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label for="contact-message"
+                                    class="block text-sm font-bold text-dark mb-2">Mensaje</label>
+                                <textarea id="contact-message" rows="4" placeholder="Escribe tu mensaje aquí..."
+                                    class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:border-primary-600 focus:ring-4 focus:ring-primary-50 outline-none transition-all"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full py-5 bg-dark text-white font-bold rounded-2xl hover:bg-primary-600 transition-all shadow-xl">Enviar
+                                Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="border-t border-slate-200 bg-white py-10 mt-8">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-3 mb-4">
+                        <img src="assets/img/logo-small.png" alt="Logo" class="w-10 h-10 rounded-lg">
+                        <div>
+                            <span class="block text-lg font-display font-bold text-dark leading-none">INFORMÁTICA</span>
+                            <span class="block text-xs font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-500">Soluciones de software contable y facturación electrónica desde
+                        1997.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Navegación</h4>
+                    <div class="flex flex-col space-y-2 text-sm text-slate-500">
+                        <a href="index.html" class="hover:text-primary-600 transition-colors">Inicio</a>
+                        <a href="pages/sobre-nosotros.html" class="hover:text-primary-600 transition-colors">Sobre
+                            Nosotros</a>
+                        <a href="pages/productos.html" class="hover:text-primary-600 transition-colors">Productos</a>
+                        <a href="pages/servicios.html" class="hover:text-primary-600 transition-colors">Servicios</a>
+                        <a href="pages/trabaja-con-nosotros.html"
+                            class="hover:text-primary-600 transition-colors">Trabaja con Nosotros</a>
+                        <a href="pages/contacto.html" class="hover:text-primary-600 transition-colors">Contacto</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Contacto</h4>
+                    <div class="text-sm text-slate-500 space-y-3">
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-primary-600"></i>
+                            <a href="tel:+595991729741" class="hover:text-primary-600 transition-colors">+595 991 729
+                                741</a>
+                        </p>
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-primary-600"></i>
+                            <a href="mailto:info@informaticaempresarial.com.py"
+                                class="hover:text-primary-600 transition-colors">info@informaticaempresarial.com.py</a>
+                        </p>
+                        <p class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-primary-600 mt-1"></i>
+                            <a href="https://maps.app.goo.gl/UmmHzRidnDjrwUHB8" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-primary-600 transition-colors">6 de Enero c/
+                                Tte Ettiene, Fdo de la
+                                Mora</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-100 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-slate-400">
+                <p>©
+                    <script>document.write(new Date().getFullYear())</script> Informática Empresarial · Paraguay
+                </p>
+                <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+                    class="hover:text-primary-600 mt-2 md:mt-0">↑ Ir al inicio</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE BANNER ===== -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="glass-card p-6 rounded-3xl shadow-2xl border border-white/40 bg-white/90">
+            <h2 class="text-dark font-bold mb-2 text-sm">Privacidad y cookies</h2>
+            <p class="text-slate-600 text-xs mb-4">Utilizamos cookies solo para mejorar tu experiencia de navegación.
+                Puedes aceptar o continuar sin aceptarlas.</p>
+            <div class="flex space-x-3">
+                <button data-cookie="accepted"
+                    class="flex-1 py-2 bg-primary-600 text-white font-bold rounded-xl text-xs hover:bg-primary-700 transition-colors">Aceptar</button>
+                <button data-cookie="declined"
+                    class="flex-1 py-2 bg-slate-100 text-slate-600 font-bold rounded-xl text-xs hover:bg-slate-200 transition-colors">No
+                    gracias</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== WHATSAPP FLOAT ===== -->
+    <a href="https://wa.me/595991729741" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Chatear por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button id="scroll-top" aria-label="Ir al inicio">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/accordion.js"></script>
+</body>
+
+</html>

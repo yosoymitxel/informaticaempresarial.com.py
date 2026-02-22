@@ -1,0 +1,66 @@
+/* ===== TEMA MODERNO (Default) ===== */
+/* Limpio, minimalista, glassmorphism sutil, fondo claro */
+
+[data-theme="moderno"] {
+    --bg-body: #f1f5f9;
+    --bg-surface: #ffffff;
+    --bg-surface-alt: #f8fafc;
+    --bg-hero-from: rgba(30, 58, 138, 0.95);
+    --bg-hero-to: rgba(15, 23, 42, 0.92);
+    --text-body: #0f172a;
+    --text-muted: #475569;
+    --text-light: #64748b;
+    --border-color: #e2e8f0;
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-border: rgba(255, 255, 255, 0.3);
+    --header-bg: rgba(255, 255, 255, 0.92);
+    --header-text: #0f172a;
+    --footer-bg: #ffffff;
+    --footer-text: #64748b;
+}
+
+[data-theme="moderno"] body,
+[data-theme="moderno"] {
+    background-color: var(--bg-body);
+    color: var(--text-body);
+}
+
+[data-theme="moderno"] .header-surface {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="moderno"] .section-alt {
+    background-color: var(--bg-surface-alt);
+}
+
+[data-theme="moderno"] .section-white {
+    background-color: var(--bg-surface);
+}
+
+[data-theme="moderno"] .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+[data-theme="moderno"] .card:hover {
+    border-color: var(--primary-200);
+    box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="moderno"] .text-muted {
+    color: var(--text-muted);
+}
+
+[data-theme="moderno"] .text-light {
+    color: var(--text-light);
+}
+
+[data-theme="moderno"] .theme-toggle-btn.inactive {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--dark);
+    border-color: var(--slate-300);
+}

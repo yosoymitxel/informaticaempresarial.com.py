@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="moderno">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios IT & Cloud | Informática Empresarial</title>
+    <meta name="description"
+        content="Servicios de Cloud, Licenciamiento, IT, Seguridad Informática y Hardware para empresas en Paraguay. Infraestructura tecnológica gestionada.">
+    <link rel="icon" type="image/png" href="../assets/img/logo-small.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' }, dark: '#0f172a' }, fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/themes/moderno.css">
+    <link rel="stylesheet" href="../assets/css/themes/clasico.css">
+    <link rel="stylesheet" href="../assets/css/themes/oscuro.css">
+</head>
+
+<body class="font-sans selection:bg-blue-200">
+    <header id="header" class="sticky top-0 z-50 w-full header-surface border-b border-slate-200/60">
+        <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center space-x-3 group"><img src="../assets/img/logo-small.png"
+                    alt="Logo" class="w-12 h-12 rounded-xl shadow-lg">
+                <div><span class="block text-xl font-display font-bold text-dark leading-none">INFORMÁTICA</span><span
+                        class="block text-sm font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span></div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="../index.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Inicio</a>
+                <a href="sobre-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Sobre
+                    Nosotros</a>
+                <a href="productos.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Productos</a>
+                <a href="servicios.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-primary-600">Servicios</a>
+                <a href="trabaja-con-nosotros.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Trabaja
+                    con Nosotros</a>
+                <a href="contacto.html"
+                    class="nav-link text-sm font-semibold uppercase tracking-tight text-slate-700 hover:text-primary-600">Contacto</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <!-- Theme Switcher (desactivado)
+                <div class="hidden sm:flex items-center bg-slate-100/80 rounded-full px-1 py-1 theme-pill"><button
+                        type="button" class="theme-toggle-btn active" data-theme="moderno">Moderno</button><button
+                        type="button" class="theme-toggle-btn inactive mx-0.5"
+                        data-theme="clasico">Clásico</button><button type="button" class="theme-toggle-btn inactive"
+                        data-theme="oscuro">Noche</button></div> -->
+                <button id="mobile-toggle" class="lg:hidden p-2 rounded-lg bg-primary-50 text-primary-600"
+                    aria-label="Menú" aria-expanded="false"><svg class="icon-open h-6 w-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg><svg class="icon-close h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg></button>
+            </div>
+        </nav>
+        <div id="mobile-nav" class="mobile-nav lg:hidden border-t border-slate-100 bg-white">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3"><a href="../index.html"
+                    class="py-2 font-semibold text-slate-800">Inicio</a><a href="sobre-nosotros.html"
+                    class="py-2 font-semibold text-slate-800">Sobre Nosotros</a><a href="productos.html"
+                    class="py-2 font-semibold text-slate-800">Productos</a><a href="servicios.html"
+                    class="py-2 font-semibold text-primary-600">Servicios</a><a href="trabaja-con-nosotros.html"
+                    class="py-2 font-semibold text-slate-800">Trabaja con Nosotros</a><a href="contacto.html"
+                    class="py-3 px-6 bg-primary-600 text-white rounded-xl text-center font-bold">Contacto</a></div>
+        </div>
+    </header>
+
+    <main class="">
+        <section class="py-16 section-alt">
+            <div class="container mx-auto px-4 md:px-8 max-w-6xl"><span
+                    class="text-primary-600 font-bold uppercase tracking-[0.2em] text-sm">Infraestructura y
+                    Soporte</span>
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-4">Servicios</h1>
+                <p class="text-slate-600 text-lg max-w-3xl">Complementa tus sistemas con nuestros servicios de
+                    infraestructura, seguridad y soporte técnico.</p>
+            </div>
+        </section>
+
+        <section class="py-20 section-white">
+            <div class="container mx-auto px-4 md:px-8 max-w-6xl">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cloud -->
+                    <div class="card p-8 hover:bg-primary-50 transition-all" data-animate>
+                        <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="h-7 w-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Cloud</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Hosting de sitios web</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Alojamiento de base de datos</span>
+                            </li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Backup de empresa</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Servidores virtuales</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Licenciamiento -->
+                    <div class="card p-8 hover:bg-primary-50 transition-all" data-animate>
+                        <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="h-7 w-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138c.194.73.57 1.393.806 1.946a3.42 3.42 0 010 4.438c-.236.553-.612 1.216-.806 1.946a3.42 3.42 0 01-3.138 3.138c-.73.194-1.393.57-1.946.806a3.42 3.42 0 01-4.438 0c-.553-.236-1.216-.612-1.946-.806a3.42 3.42 0 01-3.138-3.138c-.194-.73-.57-1.393-.806-1.946a3.42 3.42 0 010-4.438c.236-.553.612-1.216.806-1.946A3.42 3.42 0 017.835 4.697z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Licenciamiento</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Licenciamiento Microsoft</span>
+                            </li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Licenciamiento ESET</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicios IT -->
+                    <div class="card p-8 hover:bg-primary-50 transition-all" data-animate>
+                        <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="h-7 w-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Servicios Informáticos</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Configuración y dimensionamiento de
+                                    servidores</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Cableado de red de datos</span>
+                            </li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Soporte técnico
+                                    especializado</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Seguridad Informática -->
+                    <div class="card p-8 hover:bg-primary-50 transition-all" data-animate>
+                        <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="h-7 w-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Seguridad Informática</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Antivirus gestionado</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Auditoría de la red de datos de la
+                                    empresa</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Seguridad perimetral</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Revisión y auditoría de
+                                    accesos</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Hardware -->
+                    <div class="card p-8 hover:bg-primary-50 transition-all" data-animate>
+                        <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="h-7 w-7 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Hardware</h3>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Impresoras de escritorio y
+                                    ticketeras</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Lectores de código de barras /
+                                    QR</span></li>
+                            <li class="flex items-start space-x-2"><span
+                                    class="text-primary-600 font-bold">•</span><span>Gavetas de efectivo</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA Card -->
+                    <div class="p-8 bg-primary-600 rounded-3xl text-white shadow-xl shadow-primary-500/20 flex flex-col justify-center"
+                        data-animate>
+                        <p class="font-bold text-2xl mb-4">¿Necesitas soporte personalizado?</p>
+                        <p class="text-primary-100 text-sm mb-6">Nuestro equipo técnico capacitado está listo para
+                            ayudarte.</p>
+                        <a href="contacto.html"
+                            class="inline-block py-3 px-6 bg-white text-primary-600 font-bold rounded-xl text-sm hover:bg-primary-50 transition-colors text-center">Contáctanos
+                            →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div><a href="../index.html" class="flex items-center space-x-3 mb-4"><img
+                            src="../assets/img/logo-small.png" alt="Logo" class="w-10 h-10 rounded-lg">
+                        <div><span
+                                class="block text-lg font-display font-bold text-dark leading-none">INFORMÁTICA</span><span
+                                class="block text-xs font-semibold text-primary-600 tracking-wider">EMPRESARIAL</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-500">Software contable y facturación electrónica desde 1997.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Navegación</h4>
+                    <div class="flex flex-col space-y-2 text-sm text-slate-500"><a href="../index.html"
+                            class="hover:text-primary-600">Inicio</a><a href="sobre-nosotros.html"
+                            class="hover:text-primary-600">Sobre Nosotros</a><a href="productos.html"
+                            class="hover:text-primary-600">Productos</a><a href="contacto.html"
+                            class="hover:text-primary-600">Contacto</a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-dark mb-3 text-sm uppercase tracking-wider">Contacto</h4>
+                    <div class="text-sm text-slate-500 space-y-3">
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-primary-600"></i>
+                            <a href="tel:+595991729741" class="hover:text-primary-600 transition-colors">+595 991 729
+                                741</a>
+                        </p>
+                        <p class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-primary-600"></i>
+                            <a href="mailto:info@informaticaempresarial.com.py"
+                                class="hover:text-primary-600 transition-colors">info@informaticaempresarial.com.py</a>
+                        </p>
+                        <p class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-primary-600 mt-1"></i>
+                            <a href="https://maps.app.goo.gl/UmmHzRidnDjrwUHB8" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-primary-600 transition-colors">6 de Enero c/
+                                Tte Ettiene, Fdo de la
+                                Mora</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-100 mt-8 pt-6 text-center text-sm text-slate-400">
+                <p>©
+                    <script>document.write(new Date().getFullYear())</script> Informática Empresarial · Paraguay
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/595991729741" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Chatear por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <button id="scroll-top" aria-label="Ir al inicio"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
